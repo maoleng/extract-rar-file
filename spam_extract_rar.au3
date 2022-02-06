@@ -18,7 +18,7 @@ Func _extract($file_name, $password)
 	Return $a
 EndFunc
 
-For $i = 6900 to 10000
+For $i = 1 to 10000
 	$password = StringFormat("%04i", $i)
 	$check = _extract("secret_text.rar", $password)
 	ConsoleWrite('Current password: ' & $password & @CRLF)
